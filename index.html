@@ -10,17 +10,28 @@
 <p id="logo" class="no_select">Bob<b>Saget</b></p>
 </div>
 <div id="content">
+<div id="center_vid">
 <div id="video">
+<br>
 <iframe id="my_video" src="myvideo.html"></iframe>
 <h1>The Dirty Life: Bob Saget</h1>
+<p>Bob Saget is awesome & hilarious. Truth.</p>
 <div id="share">Share</div>
-
-<div id="share_content">
-<div id="all_stuff_share">
-<h3 style="color: #ffffff;">SHARE:</h3>
-<label id="input_name">URL</label><input style="padding-left: 50px; padding-right: 5px; margin-yopA" type="text" class="inputs" value="http://example.com/low">
-<div class="share_btn" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://gestople.github.io/bob-saget/', 'newwindow', 'width=500, height=400'); return false;">Facebook</div>
 </div>
+<div id="share_content">
+<center>
+<div id="all_stuff_share">
+<div id="close_btn">X</div>
+<h3 style="color: #ffffff;">SHARE:</h3>
+<label id="input_name">URL</label><input onClick="this.setSelectionRange(0, this.value.length)" style="padding-left: 50px; padding-right: 5px; margin-yopA" type="text" class="inputs" value="http://gestople.github.io/bob-saget/" readonly><br><br>
+<span class="share_btn" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://gestople.github.io/bob-saget/', 'newwindow', 'width=500, height=400'); return false;">Facebook</span>
+<span class="share_btn" onclick="window.open('https://twitter.com/intent/tweet?url=http://gestople.github.io/bob-saget/&text=The Dirty Life: Bob Saget. Check it out here: &via=bobsaget', 'newwindow', 'width=500, height=400'); return false;">Twitter</span>
+<span class="share_btn" onclick="window.open('https://plus.google.com/share?url=http://gestople.github.io/bob-saget/', 'newwindow', 'width=500, height=400'); return false;">Google+</span>
+<span class="share_btn" onclick="window.open('http://www.reddit.com/submit?url=http://gestople.github.io/bob-saget/&title=The Dirty Life: Bob Saget', 'newwindow', 'width=500, height=400'); return false;">Reddit</span>
+<span class="share_btn" onclick="window.open('http://digg.com/submit?url=http://gestople.github.io/bob-saget/&title=The Dirty Life: Bob Saget', 'newwindow', 'width=500, height=400'); return false;">Digg</span>
+<span class="share_btn" onclick="window.open('http://www.tumblr.com/share/link?url=http://gestople.github.io/bob-saget/&name=The Dirty Life: Bob Saget&description=Watch The Dirty Life: Bob Saget here.', 'newwindow', 'width=500, height=400'); return false;">Tumblr</span>
+</div>
+</center>
 <div id="share_bg"></div>
 </div>
 </div>
@@ -32,7 +43,7 @@ $("#share").click(function() {
 		$("#my_video").hide();
 	});
 });
-$("#share_bg").click(function() {
+$("#close_btn").click(function() {
 	$("#share_content").hide("slow", function(){
 		$("#my_video").show();
 	});

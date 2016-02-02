@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Typograph Pro';
+    src: url('typograph_pro_light-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Typograph Pro';
+    src: url('typograph_pro_semi_bold-font.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
